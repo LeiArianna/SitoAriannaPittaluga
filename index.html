@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arianna Web Designer</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+<!-- OG -->
+    <meta property="og:image" content="images/mia-foto.jpg"
+        property="og:image:height" content="300"
+        propriety="og:image:width" content="200" />
+    <meta property="og:title" content="Arianna Pittaluga Web Designer" />
+    <meta property="og:description" 
+        content="Professionista Sviluppatrice Web, dal back end al front end." />
+<!-- email form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <script type="text/javascript" 
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("Pl9lD1zxhcj9YIfax");
+        })();
+     </script>
+    <script>
+        emailjs.sendForm('contact_service', 'contact_form', this)
+    </script>
+</head>
+<body>
+<!-- menu laterale destro fixed -->
+    <aside>
+        <div class="menu">
+            <ul>
+                <a href="index.html"><li>CHI SONO</li></a>
+                <a href="portfolio.html"><li>PORTFOLIO</li></a>
+                <a href="#social"><li>SOCIAL</li></a>
+            </ul>
+        </div>
+        <!-- div per trasparenza sfondo radiale inutilizzato --> 
+        <!-- <div class="sfondo-menu"></div> -->
+    </aside>
+<!-- header pagina -->
+    <div class="container">
+        <header class="container-header">
+            <div class="mia-foto">           
+                <img src="images/mia-foto.jpg" />    
+            </div>
+            <div class="header-text">
+                <h1>Arianna Pittaluga</h1>
+                <h2>Sviluppatrice Siti Web</h2>
+            </div>
+        </header>
+<!-- div 4 riquadri -->
+        <section>
+            <div class="item-container">
+                <div class="item one">
+                    <div>
+                        <h1>Chi Sono</h1>
+                    </div>
+                    <div class="testo-one">
+                        <h3>Sviluppatrice di Siti Web a <strong>360°</strong></h3>
+                    </div>
+                    <div class="titoletti">
+                        <div>
+                            <p class="one-chiave"><em><strong>Front</strong> End</em></p>
+                            <p class="sotto-titolo">Lato visivo</p>
+                            <p class="sotto-sotto-titolo">User Friendly</p>
+                        </div>
+                        <div>
+                            <p class="one-chiave"><em><strong>Back</strong> End</em></p>
+                            <p class="sotto-titolo">Dietro Le Quinte</p>
+                            <p class="sotto-sotto-titolo">Lato Server</p>
+                        </div>
+                    </div>
+                    <div class="testini">
+                        <div><p>Sviluppo la parte visiva di siti e app facilitando l'esperienza utente.</p></div>
+                        <div><p>Sviluppo la struttura di siti e app creando le fondamenta.</p></div>
+                    </div>
+                    <div class="bio">
+                        <h3>Professionale</h3>
+                        <p>Sono una persona molto creativa e mi diverte applicare la mia creatività
+                            su tutto quello cui vengo in contatto.
+                        </p>
+                        <p>Nella creazione di siti web trovo divertente la sfida di 
+                            elaborare le idee del cliente in un prodotto finito che soddisfi
+                            le sue necessità.
+                        </p>
+                        <h3>Personale</h3>
+                        <p>Nel tempo libero mi piace andare in bici o pattini, ascoltare podcast di 
+                            true crime e videogiocare costruendo planimetrie in giochi open world/
+                            crafting/survival/building.
+                        </p>
+                    </div>
+                </div>
+                <div class="item two">
+                    <div>
+                        <h1>Software Che Uso</h1>
+                    </div>
+                    <div class="titoletti">
+                        <div><h3>Front End</h3></div>
+                        <div><h3>Back End</h3></div>
+                    </div>
+                    <div class="titoletti titoletti-two">
+                        <div>
+                            <ul>
+                                <li>GitHub</li>
+                                <li>Visual Studio Code</li>
+                                <li>[in fase di sviluppo]</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>[in fase di sviluppo]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item three">
+                    <div>
+                        <h1>Linguaggi Che Uso</h1>
+                    </div>
+                    <div class="titoletti">
+                        <div><h3>HTML</h3></div>
+                        <div><h3>CSS</h3></div>
+                        <div><h3>JavaScript</h3></div>
+                    </div>
+                    <div class="titoletti codici">
+                        <div><p>&ltlove /&gt</p></div>
+                        <div><p>love { }</p></div>
+                        <div><p>var love = ' '</p></div>
+                    </div>
+                    <div class="work-in-progress">
+                        <p>[in fase di sviluppo]</p>
+                    </div>
+                </div>
+                <div class="item four">
+                    <div class="lavoro-text">
+                        <h1>Portfolio</h1>
+                        <h3>I Miei Lavori</h3>
+                    </div>
+                    <div class="lavoro-container">
+                        <div class="lavoro l1"><a href="portfolio.html#lav1"></a></div>
+                        <div class="lavoro l2"><a href="portfolio.html#lav2"></a></div>
+                        <div class="lavoro l3"><a href="portfolio.html#lav3"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- div social -->
+        <section id="social" class="item socials">
+            <div>
+                <h1>Social</h1>
+            </div>
+
+                <div class="git-container">
+                    <a class="git-descrizione" href="https://github.com/LeiArianna" target="_blank">
+                        <div>
+                            <p class="p-git">GitHub</p>
+                            <p><strong>LeiArianna - Owerview</strong></p>
+                            <p>LeiArianna has one respository available. Follow their code on GitHub.</p>
+                        </div>
+                    </a>
+                    <a class="git-foto" href="https://github.com/LeiArianna" target="_blank">
+                        <div>
+                            <img src="images/foto-git.png" />
+                        </div>
+                    </a>
+                </div>
+<!-- form contattami -->
+            <form method="post" enctype="text/plain">
+                <div>
+                    <h3>Contattami</h3>
+                </div>
+                <div class="form-nome">
+                    <label for="name">Nome</label>
+                    <input type="text" 
+                            id="name"
+                            name="user_name" 
+                            required minlength="4" 
+                            maxlength="24" 
+                            size="25" 
+                            placeholder="Nome"/>
+                </div>
+                <div class="form-mail">
+                    <label for="email">E-mail</label>
+                    <input type="email" 
+                            id="email" 
+                            name="user_email" 
+                            size="31" 
+                            autocomplete="on"
+                            placeholder="esempio@esempio.es"/>
+                </div>
+                <div class="form-request">
+                    <label for="request">Testo</label>
+                    <textarea class="textarea" 
+                            id="request" 
+                            name="message"></textarea>
+                </div>
+                <div>
+                    <input class="button" type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+<!-- footer -->
+         <footer class="footer">
+            <div class="footer-header">
+                <p>© Arianna Pittaluga 2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

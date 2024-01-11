@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/texture-repeat-flowers-dark.png);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* aside div menu laterale fixed */
+aside div {
+    position: fixed;
+    background-color: rgba(43, 11, 73, 0.8);
+    /*background-image: linear-gradient(to bottom right, rgba(56, 26, 30, 0.8), rgba(75, 69, 100, 0.8));*/
+    top: 40%;
+    right: 0px;
+    padding: 10px 20px 10px 40px;
+    border-radius: 40px 0px 0px 40px;
+}
+.menu li {
+    list-style-type: circle;
+    padding: 10px;
+}
+.menu a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li:hover {
+    background-color: rgba(43, 11, 73, 0.8);
+    position: relative;
+    right: 10px;
+}
+.menu a:link {
+    color:#D04;
+}
+.menu a:visited {
+    color:#D04;
+}
+/* classe per trasparenza sfondo radiale inutilizzata
+.sfondo-menu {
+    background-image: linear-gradient(to bottom right, rgb(88, 41, 47), rgb(191, 177, 255));
+    opacity: 0.2;
+    position: fixed;
+    top: 40%;
+    right: 0px;
+    padding: 5px 5px 5px 30px;
+    border-radius: 20px;
+    height: 150px;
+    width: 195px;
+} */
+/* div container header, section item-container and footer  */
+.container {
+    background-color: transparent;
+    width: 900px;
+    margin: 0 auto;
+}
+/* header */
+.container-header {
+    background-color: rgba(110, 29, 187, 0.5);
+    padding: 10px 10px;
+    display: flex;
+    color: rgba(253, 0, 75, 0.6);
+}
+.mia-foto img {
+    width: 100px;
+    margin: 10px 20px 0px 150px;
+    transform: rotate(4deg);
+}
+.header-text {
+    margin: 10px 10px;
+}
+/* content body */
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    height: 400px;
+    flex-basis: 50%;
+    padding: 10px;    
+}
+.item h1 {
+    color: white;
+    font-size: 30px;
+    text-shadow: rgb(255, 0, 75) 1px 1px;
+    padding: 10px 0px;
+}
+.item h3 {
+    text-shadow: rgb(102, 0, 31) 2px 2px;
+}
+.one {
+    background-image: url(../images/front-back-end-sfondo.png);
+    background-position: -40px;
+}
+.two {
+    background-image: url(../images/sw-che-uso.png);
+}
+.three {
+    background-image: url(../images/linguaggi-che-uso.jpg);
+}
+.four {
+    background-image: url(../images/portfolio-sfondo.png);
+    background-position: -85px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.testo-one {
+    padding: 5px 10px 5px 10px;
+    flex-basis: 75%;
+}
+.testo-one h3 {
+    padding: 0px 0px 10px 0px;
+}
+.bio {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 25px 15px;
+    padding: 15px;
+}
+.titoletti {
+    line-height: 20px;
+    padding: 5px 0 1px 0;
+    text-shadow: rgb(255, 0, 72) 1px 1px;
+    display: flex;
+    text-align: center;
+}
+.titoletti-two div {
+    margin: 15px 10px 1px 20px;
+    text-align: left;
+}
+.titoletti div {
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+.testini {
+    display: flex;
+}
+.testini div {
+    padding: 5px 18px 1px 18px;
+    flex-basis: 50%;
+    text-align: j;
+    min-width: 100px;
+}
+.codici {
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+}
+.work-in-progress {
+    padding: 50px;
+    text-align: center;
+}
+.one-chiave {
+    color:#ffffff;
+    padding: 1px;
+}
+.sotto-titolo {
+    color:#ffbacf;
+    padding: 1px;
+}
+.sotto-sotto-titolo {
+    color:rgb(255, 255, 255);
+    padding: 1px;
+}
+/* item four */
+.four div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.four h1 {
+    height: 60px;
+    flex-basis: 100%;
+}
+.four h3 {
+    justify-content: center;
+    margin: 0px auto;
+    flex-basis: 100%;
+    text-align: center;
+}
+.lavoro-text {
+    height: 80px;
+    flex-basis: 100%;
+}
+.lavoro-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.lavoro {
+    width: 130px;
+    height: 100px;
+    flex-basis: 28%;
+    margin: 0px 5px;
+}
+.lavoro a{
+    width: 130px;
+    height: 110px;
+}
+.lavoro:hover {
+    flex-basis: 28%;
+    height: 60%;
+    width: 200px;
+}
+/* immagini di anteprima dei miei lavori */
+.l1 {
+    /*border: 5px solid red; */
+    background-color: gray;
+    /*background-position: -1px; */
+}
+.l2 {
+    /*border: 5px solid rgb(4, 0, 255); */
+    background-color: gray;
+    /*background-position: -1px; */
+}
+.l3 {
+    /*border: 5px solid rgb(229, 255, 0); */
+    background-color: gray;
+    /*background-position: -1px; */
+}
+/* socials */
+.socials {
+    background-color: rgba(255, 0, 75, 0.1);
+    padding: 10px;
+    height: auto;
+}
+.social div {
+    padding: 10px;
+}
+/* div GitHub */
+.git-container {
+    background-color: rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0px 100px;
+}
+.git-container a {
+    text-decoration: none;
+}
+.git-descrizione {
+    flex-basis: 80%;
+    padding: 10px;
+    color: white;
+}
+.git-descrizione p {
+    padding: 2.5px;
+    flex-basis: 100%;
+}
+.git-descrizione:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.p-git {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Mona Sans', 'Hubot Sans', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.git-foto {
+    flex-basis: 20%;
+}
+.git-foto:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.git-foto img {
+    width: 100px;
+    margin-top: 3px;
+    margin-left: 15%;
+}
+/* socials form */
+input {
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #9e002f;
+    font-size: 20px;
+}
+input::placeholder {
+    color: rgb(41, 41, 41);
+}
+form {
+    background-color: rgba(255, 0, 75, 0.2);
+    border: 5px solid #FF004B;
+    border-radius: 15px;
+    margin: 20px 100px;
+    padding: 30px 100px;
+}
+.form-nome {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.form-mail {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.form-request {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.form-request textarea {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #9e002f;
+    height: 200px;
+    width: 90%;
+    font-size: 20px;
+    resize: none;
+}
+label {
+    padding-right: 100px;
+}
+.button {
+    background-color: rgba(255, 0, 75, 0.2);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    margin: 10px 100px;
+}
+.button:hover {
+    background-color: #F04;
+}
+/* footer */
+.footer {
+    background-color: rgba(110, 29, 187, 0.5);
+    height: 200px;
+    color: white;
+}
+.footer-header {
+    bottom: -10px;
+    position: relative;
+    text-align: center;
+    align-items: bottom;
+}
+
+/* ------------- CSS portfolio.html --------- */
+.item-portfolio {
+    background-color: rgba(255, 0, 76, 0.1);
+    height: 100%;
+    flex-basis: 100%;
+    padding: 10px;  
+    margin: 10px 0 10px 0;
+}
+.titolo-portfolio {
+    flex-basis: 100%;
+    height: 10%;
+    padding-left: 10px;
+}
+.contenitore-portfolio {
+    flex-basis: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.immagine-sito {
+    flex-basis: 30%;
+    height: 200px;
+    margin: 0px auto;
+}
+.immagine-sito a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.immagine-sito img {
+    height: 200px;
+}
+.contenitore-descrizione {
+    flex-basis: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nome-sito {
+    flex-basis: 100%;
+    height: 10%;
+    padding-left: 10px;
+}
+.descrizione-sito {
+    flex-basis: 100%;
+    height: 90%;
+    padding-right: 100px;
+    justify-content: left;
+}
+.descrizione-sito p {
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    * {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    aside div {
+        position: fixed;
+        background-color: rgba(43, 11, 73, 0.8);
+        top: 0%;
+        right: 0%;
+        padding: 10px 20px 10px 40px;
+        border-radius: 40px 0px 40px 20px;
+    }
+    .item {
+    flex-basis: 100%;
+    }
+    .one {
+        height: 850px;
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: top;
+    }
+    .two {
+        background-size: 950px;
+    }
+    .three {
+        background-size: 950px;
+    }
+    .four {
+        background-size: 1050px;
+    }
+    .bio h3 {
+        padding: 10px 0 10px 0;
+    }
+    .bio p {
+        padding: 3px 10px 3px 10px;
+    }
+    .item h1 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+    .titoletti-two div {
+        margin: 15px 5% 1px 10%;
+    }
+    .testini div {
+        margin: 5px 10px 5px 10px;
+    }
+    .bio h3 {
+        text-shadow: rgb(255, 0, 75) 2px 2px;
+    }
+    .lavoro-container div {
+        flex-basis: 25%;
+        margin: 0px 20px 0px 20px;
+    }
+    .lavoro:hover {
+        width: 140px;
+        height: 110px;
+        flex-basis: 26%;
+    }
+    .p-git {
+        font-size: 20px;
+    }
+}
+/*settaggi schermi per futuri cambiamenti*/
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+
+}
+
+@media only screen and (min-width: 961px) {
+    .bio {
+        color: #222;
+    }
+    .bio:hover {
+        background-image: url(../images/sfondo-bio2.jpg);
+        background-position: -70px 40px;
+        color:white;
+        position: relative;
+    }
+    .bio h3 {
+        padding: 10px 0 10px 0;
+    }
+    .bio p {
+        padding: 3px 10px 3px 10px;
+    }
+}
